@@ -65,6 +65,8 @@ public class ToDoActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    //By clicking the add button you add an item to the list
+
     @Override
     public void onClick(View view) {
 
@@ -98,7 +100,7 @@ public class ToDoActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public static boolean exitDelete = true;
-
+//On clicking item you confirm that it is complete by removing it from the list
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
@@ -121,7 +123,7 @@ public class ToDoActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
-
+//You can edit an item by long pressing it
     @Override
     public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
 
@@ -134,7 +136,7 @@ public class ToDoActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
+        inflater.inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

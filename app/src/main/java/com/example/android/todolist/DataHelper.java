@@ -14,7 +14,7 @@ import static android.provider.Telephony.Mms.Part.FILENAME;
 
 public class DataHelper {
 
-    public static String STORE = "itemstore.dat";
+    public static final String STORE = "itemstore.dat";
 
     public static void writeItem(ArrayList<String> items, Context context)
     {
